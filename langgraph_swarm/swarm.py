@@ -128,7 +128,7 @@ def add_active_agent_router(
 
     """
     #channels = builder.schemas[builder.state_schema]
-    if "active_agent" not in channels:
+    if "active_agent" not in builder.channels:
         msg = "Missing required key 'active_agent' in in builder's state_schema"
         raise ValueError(msg)
 
